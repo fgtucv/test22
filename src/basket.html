@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+        rel="stylesheet">
+    <link href="./scss/basket.scss" rel="stylesheet">
+</head>
+
+<body>
+    <!-- header -->
+
+    <header class="header"></header>
+
+
+    <!-- main -->
+
+    <main class="main">
+        <div class="container">
+            <section class="info">
+                <div class="support">
+                    <h2 class="support__title">Support Ukraine</h2>
+                    <svg class="support__emblem-icon">
+                        <use href="./icon/symbol-defs.svg#icon-emblem"></use>
+                    </svg>
+                    <ul class="support__list">
+                        <li class="support__item">
+                            <span class="support__span">01</span>
+                            <a class="support__link"
+                                href="https://www.savethechildren.net/what-we-do/emergencies/war-ukraine">
+                                <img class="support__img" src="./imeges/SaveTheChildren.png" alt="Save the Children">
+                            </a>
+                        </li>
+                        <li class="support__item">
+                            <span class="support__span">02</span>
+                            <a class="support__link" href="https://www.projecthope.org/region/europe/ukraine/">
+                                <img class="support__img" src="./imeges/projectHOPE.png" alt="project HOPE">
+                            </a>
+                        </li>
+                        <li class="support__item">
+                            <span class="support__span">03</span>
+                            <a class="support__link" href="https://internationalmedicalcorps.org/country/ukraine/">
+                                <img class="support__img" src="./imeges/InternationalMedicalCorps.png"
+                                    alt="International Medical Corps">
+                            </a>
+                        </li>
+                        <li class="support__item">
+                            <span class="support__span">04</span>
+                            <a class="support__link" href="https://www.razomforukraine.org/ua/home_ua/">
+                                <img class="support__img" src="./imeges/Razom.png" alt="Razom">
+                            </a>
+                        </li>
+                        <li class="support__item">
+                            <span class="support__span">05</span>
+                            <a class="support__link"
+                                href="https://www.actionagainsthunger.org/location/europe/ukraine/">
+                                <img class="support__img" src="./imeges/ActionAgaintsHunger.png"
+                                    alt="Action Againts Hunger">
+                            </a>
+                        </li>
+                        <li class="support__item">
+                            <span class="support__span">06</span>
+                            <a class="support__link" href="https://prytulafoundation.org/en/">
+                                <img class="support__img" src="./imeges/CharityRoundationSergiyPrytula.png"
+                                    alt="Charity roundation Sergiy Prytula">
+                            </a>
+                        </li>
+                        <li class="support__item no-showe">
+                            <span class="support__span">07</span>
+                            <a class="support__link" href="https://www.msf.org/ukraine">
+                                <img class="support__img" src="./imeges/MedecinsSansFrontiernes.png"
+                                    alt="Medecins Sans Frontiernes">
+                            </a>
+                        </li>
+                        <li class="support__item no-showe">
+                            <span class="support__span">08</span>
+                            <a class="support__link" href="https://wv.ua/">
+                                <img class="support__img" src="./imeges/WorldVision.png" alt="World Vision">
+                            </a>
+                        </li>
+                        <li class="support__item no-showe">
+                            <span class="support__span">09</span>
+                            <a class="support__link" href="https://u24.gov.ua/uk">
+                                <img class="support__img" src="./imeges/United24.png" alt="United24">
+                            </a>
+                        </li>
+                    </ul>
+                    <button class="support__scroll-button" type="button">
+                        <svg class="support__scroll-icon">
+                            <use href="./icon/symbol-defs.svg#icon-arrow-top"></use>
+                        </svg>
+                    </button>
+                </div>
+            </section>
+            <section class="shoping-list">
+                <h2 class="shoping-list__main-title">Shopping <span class="purpure">List</span></h2>
+                <ul class="shoping-list__list"></ul>
+                <div class="shoping-list__pagination-div">
+                    <button class="shoping-list__pagination-back-too" type="button">&#171;</button>
+                    <button class="shoping-list__pagination-back" type="button">&#8249;</button>
+                    <ul class="shoping-list__pagination-list">
+                        <li class="shoping-list__pagination-item">
+                            <button id="0button" type="button"
+                                class="shoping-list__pagination-number active-number">1</button>
+                        </li>
+                    </ul>
+                    <button class="shoping-list__pagination-forward" type="button">&#8250;</button>
+                    <button class="shoping-list__pagination-forward-too" type="button">&#187;</button>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <!-- modals -->
+
+    <div class="phoneLogin-bacdrop is-hidden">
+        <div class="phoneLogin__account-div">
+            <div class="phoneLogin__account-avatar-div">
+                <svg class="phoneLogin__account-avatar">
+                    <use href="./icon/symbol-defs.svg#icon-user"></use>
+                </svg>
+            </div>
+            <span class="phoneLogin__account-name"></span>
+        </div>
+        <ul class="phoneLogin__nav-list">
+            <li class="phoneLogin__nav-item active-nav-item">
+                <a href="./index.html" class="phoneLogin__nav-link active-nav-link">Home</a>
+            </li>
+            <li class="phoneLogin__nav-item">
+                <a class="phoneLogin__nav-link" href="./basket.html">Shopping list</a>
+                <svg class="phoneLogin__nav-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                    viewBox="0 0 20 20" fill="none">
+                    <path
+                        d="M15.8333 5.83335H13.3333V5.00002C13.3333 4.11596 12.9821 3.26812 12.357 2.643C11.7319 2.01788 10.884 1.66669 9.99999 1.66669C9.11594 1.66669 8.26809 2.01788 7.64297 2.643C7.01785 3.26812 6.66666 4.11596 6.66666 5.00002V5.83335H4.16666C3.94565 5.83335 3.73369 5.92115 3.57741 6.07743C3.42113 6.23371 3.33333 6.44567 3.33333 6.66669V15.8334C3.33333 16.4964 3.59672 17.1323 4.06556 17.6011C4.5344 18.07 5.17029 18.3334 5.83333 18.3334H14.1667C14.8297 18.3334 15.4656 18.07 15.9344 17.6011C16.4033 17.1323 16.6667 16.4964 16.6667 15.8334V6.66669C16.6667 6.44567 16.5789 6.23371 16.4226 6.07743C16.2663 5.92115 16.0543 5.83335 15.8333 5.83335ZM8.33333 5.00002C8.33333 4.55799 8.50892 4.13407 8.82148 3.82151C9.13404 3.50895 9.55796 3.33335 9.99999 3.33335C10.442 3.33335 10.8659 3.50895 11.1785 3.82151C11.4911 4.13407 11.6667 4.55799 11.6667 5.00002V5.83335H8.33333V5.00002ZM15 15.8334C15 16.0544 14.9122 16.2663 14.7559 16.4226C14.5996 16.5789 14.3877 16.6667 14.1667 16.6667H5.83333C5.61231 16.6667 5.40035 16.5789 5.24407 16.4226C5.08779 16.2663 4.99999 16.0544 4.99999 15.8334V7.50002H6.66666V8.33335C6.66666 8.55437 6.75446 8.76633 6.91074 8.92261C7.06702 9.07889 7.27898 9.16669 7.49999 9.16669C7.72101 9.16669 7.93297 9.07889 8.08925 8.92261C8.24553 8.76633 8.33333 8.55437 8.33333 8.33335V7.50002H11.6667V8.33335C11.6667 8.55437 11.7545 8.76633 11.9107 8.92261C12.067 9.07889 12.279 9.16669 12.5 9.16669C12.721 9.16669 12.933 9.07889 13.0892 8.92261C13.2455 8.76633 13.3333 8.55437 13.3333 8.33335V7.50002H15V15.8334Z"
+                        fill="#111111" />
+                </svg>
+            </li>
+        </ul>
+        <button class="phoneLogin__exit-button" type="button">
+            Log out
+            <svg class="phoneLogin__exit-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                viewBox="0 0 20 20" fill="none">
+                <path d="M3.33325 10H16.6666M16.6666 10L11.6666 5M16.6666 10L11.6666 15" stroke="#EAC645"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- scrip -->
+    <script  type="module" src="./basket.js"></script>
+</body>
+
+</html>

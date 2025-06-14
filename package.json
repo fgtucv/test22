@@ -1,0 +1,18 @@
+{
+  "name": "test",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "homepage": "https://fgtucv.github.io/test22/",
+  "scripts": {
+    "start": "parcel src/index.html src/basket.html --no-cache",
+    "build": "parcel build src/index.html src/basket.html --no-cache --public-url /test/",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@parcel/transformer-sass": "^2.15.2",
+    "gh-pages": "^6.3.0",
+    "parcel": "^2.15.2",
+    "sass": "^1.89.2"
+  }
+}

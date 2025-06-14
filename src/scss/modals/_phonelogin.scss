@@ -1,0 +1,111 @@
+.phoneLogin-bacdrop {
+    background: radial-gradient(189.32% 190.93% at 59.76% -23.42%, #4F2EE8 18.03%, #FFF 100%);
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 84px;
+    padding-left: 20px;
+    z-index: 999;
+}
+
+.phoneLogin__account-div {
+    display: flex;
+    align-items: center;
+}
+
+.phoneLogin__account-avatar-div {
+    padding: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+.phoneLogin__account-avatar {
+    width: 19px;
+    height: 19px;
+    flex-shrink: 0;
+    fill: #4f2ee8;
+
+}
+
+.phoneLogin__account-name {
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.44px;
+    margin-left: 9px;
+}
+
+.phoneLogin__nav-list {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    margin-top: 180px;
+}
+
+.phoneLogin__nav-item {
+    align-items: center;
+    display: flex;
+}
+
+.phoneLogin__nav-item:first-child {
+    margin-bottom: 16px;
+}
+
+.active-nav-item {
+    border-radius: 36px;
+    background: #EAC645;
+    padding: 8px 16px;
+    width: fit-content;
+}
+
+.phoneLogin__nav-link {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+.active-nav-link {
+    font-weight: 700;
+    color: #111111;
+}
+
+.phoneLogin__nav-icon {
+    width: 20px;
+    height: 20px;
+    stroke: #ffffff;
+    fill: #ffffff;
+}
+
+.phoneLogin__exit-button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 18px;
+    border: 1.5px solid #111;
+    background-color: #FFF;
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    letter-spacing: -0.56px;
+    padding: 14px 24px;
+    bottom: 0px;
+    white-space: nowrap;
+}
+
+.phoneLogin__exit-icon {
+    margin-left: 4px;
+    width: 20px;
+    height: 20px;
+}
